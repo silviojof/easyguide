@@ -1,6 +1,6 @@
 {
   "name": "stories",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "private": true,
@@ -15,11 +15,11 @@
   "keywords": [],
   "author": "Guilherme M. Gregio <guilherme@gregio.net> (http://gregio.net/)",
   "dependencies": {
+    "@easyguide/table": "file:../table",
     "emotion": "^9.2.6",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-emotion": "^9.2.6",
-    "@easyguide/table": "file:../table"
+    "react-emotion": "^9.2.6"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.10",
