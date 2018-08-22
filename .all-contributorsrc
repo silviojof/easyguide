@@ -35,6 +35,17 @@
         "code",
         "test"
       ]
+    },
+    {
+      "login": "matheusiacono",
+      "name": "Matheus Iácono",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5877325?v=4",
+      "profile": "https://iacono.com.br",
+      "contributions": [
+        "bug",
+        "code",
+        "test"
+      ]
     }
   ]
 }
