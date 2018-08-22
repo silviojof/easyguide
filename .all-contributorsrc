@@ -10,12 +10,19 @@
   "commit": true,
   "contributors": [
     {
-      "login": "guilherme",
-      "name": "Guilherme Campos",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/19025?v=4",
-      "profile": "https://github.com/guilherme",
+      "login": "guilhermegregio",
+      "name": "Guilherme Gregio",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/806519?v=4",
+      "profile": "http://www.gregio.net",
       "contributions": [
-        "code"
+        "bug",
+        "code",
+        "doc",
+        "example",
+        "ideas",
+        "infra",
+        "test",
+        "tool"
       ]
     }
   ]
