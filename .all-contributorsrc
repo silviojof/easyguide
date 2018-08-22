@@ -2,11 +2,21 @@
   "projectName": "easyguide",
   "projectOwner": "easynvest",
   "repoType": "github",
-  "repoHost": "https://github.com/easynvest/easyguide",
+  "repoHost": "https://github.com",
   "files": [
     "README.md"
   ],
   "imageSize": 100,
   "commit": true,
-  "contributors": []
+  "contributors": [
+    {
+      "login": "guilherme",
+      "name": "Guilherme Campos",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/19025?v=4",
+      "profile": "https://github.com/guilherme",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
 }
