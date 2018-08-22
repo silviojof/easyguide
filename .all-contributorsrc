@@ -1,0 +1,12 @@
+{
+  "projectName": "easyguide",
+  "projectOwner": "easynvest",
+  "repoType": "github",
+  "repoHost": "https://github.com/easynvest/easyguide",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": []
+}

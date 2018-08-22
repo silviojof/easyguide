@@ -8,6 +8,7 @@
   },
   "scripts": {
     "contributor:add": "kcd-scripts contributors add",
-    "contributor:generate": "kcd-scripts contributors generate"
+    "contributor:generate": "kcd-scripts contributors generate",
+    "precommit": "kcd-scripts precommit"
   }
 }
