@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [@easyguide/table](#easyguidetable)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # @easyguide/table
 
 > Camponents table ui
@@ -13,15 +23,13 @@ npm install --save @easyguide/table
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
 import MyComponent from '@easyguide/table'
 
 class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
+  render() {
+    return <MyComponent />
   }
 }
 ```

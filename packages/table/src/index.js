@@ -1,25 +1,10 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Table from './Table'
+import TableBody from './TableBody'
+import TableCell from './TableCell'
+import TableHeader from './TableHeader'
+import TableRow from './TableRow'
+import TableSortLabel from './TableSortLabel'
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
+export default Table
 
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <Table>
-        <tr>
-          <td>
-            Example Component: {text}
-          </td>
-        </tr>
-      </Table>
-    )
-  }
-}
+export {Table, TableBody, TableCell, TableHeader, TableRow, TableSortLabel}

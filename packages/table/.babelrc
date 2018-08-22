@@ -1,13 +1,4 @@
 {
-  "presets": [
-    ["env", {
-      "modules": false
-    }],
-    "stage-0",
-    "react"
-  ],
-  "plugins": [
-    "emotion",
-    "external-helpers"
-  ]
+  "presets": ["kcd-scripts/babel"],
+  "plugins": ["emotion"]
 }

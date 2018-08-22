@@ -3,6 +3,11 @@
   "private": true,
   "devDependencies": {
     "create-react-library": "^2.6.0",
+    "kcd-scripts": "^0.42.1",
     "lerna": "^3.1.2"
+  },
+  "scripts": {
+    "contributor:add": "kcd-scripts contributors add",
+    "contributor:generate": "kcd-scripts contributors generate"
   }
 }
