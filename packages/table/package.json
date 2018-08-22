@@ -1,6 +1,6 @@
 {
   "name": "@easyguide/table",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Components table ui",
   "author": "guilhermegregio",
   "license": "MIT",
@@ -29,10 +29,10 @@
     "storybook:deploy": "gh-pages -d ./storybook-static"
   },
   "peerDependencies": {
+    "emotion": "^9.2.6",
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^15.0.0 || ^16.0.0",
-    "emotion": "^9.2.6",
     "react-emotion": "^9.2.6"
   },
   "devDependencies": {
