@@ -19,8 +19,6 @@
         "code",
         "doc",
         "example",
-        "ideas",
-        "infra",
         "test",
         "tool"
       ]
@@ -33,7 +31,8 @@
       "contributions": [
         "bug",
         "code",
-        "test"
+        "test", 
+		"doc"
       ]
     },
     {
@@ -44,7 +43,8 @@
       "contributions": [
         "bug",
         "code",
-        "test"
+        "test",
+		"doc"
       ]
     }
   ]
