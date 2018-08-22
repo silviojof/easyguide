@@ -4,7 +4,7 @@
   "description": "Components table ui",
   "author": "guilhermegregio",
   "license": "MIT",
-  "repository": "guilhermegregio/@easyguide/table",
+  "repository": "git@github.com:easynvest/easyguide.git",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -20,13 +20,7 @@
     "prepare": "npm run build",
     "lint": "kcd-scripts lint",
     "validate": "kcd-scripts validate lint,test:cover",
-    "precommit": "kcd-scripts precommit",
-    "storybook": "start-storybook -p 6006 -c stories",
-    "storybook:build": "build-storybook -c stories",
-    "storybook:install": "cd stories && npm install",
-    "storybook:serve": "serve ./storybook-static -p 6006",
-    "storybook:predeploy": "npm run storybook:install && npm run storybook:build",
-    "storybook:deploy": "gh-pages -d ./storybook-static"
+    "precommit": "kcd-scripts precommit"
   },
   "peerDependencies": {
     "emotion": "^9.2.6",
@@ -36,7 +30,6 @@
     "react-emotion": "^9.2.6"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.10",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
     "babel-plugin-emotion": "^9.2.6",
@@ -55,7 +48,6 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
-    "gh-pages": "^1.2.0",
     "jest-environment-jsdom": "^23.4.0",
     "kcd-scripts": "^0.42.1",
     "react": "^16.4.1",
