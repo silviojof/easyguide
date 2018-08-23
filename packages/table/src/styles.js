@@ -7,6 +7,19 @@ export const tableStyle = () => css`
 `
 
 export const tableHeadStyle = () => css`
+  & tr:hover {
+    cursor: default;
+    box-shadow: none;
+
+    & > td:first-child {
+      border-left-color: transparent;
+    }
+
+    & > td:last-child {
+      border-right-color: transparent;
+    }
+  }
+
   & td {
     text-transform: uppercase;
     font-size: 12px;
@@ -26,8 +39,8 @@ export const tableRowStyle = () => css`
     cursor: pointer;
     box-shadow: 0 4px 5px 0 rgba(50, 40, 40, 0.06);
 
-    & > * {
-      font-weight: 500;
+    & > td {
+      font-weight: bold;
 
       &:first-child {
         border-left-color: #d8d8d8;
@@ -46,7 +59,6 @@ export const tableCellStyle = ({numeric = false}) => css`
   color: #322828;
   font-family: 'Rational-Light';
   font-size: 14px;
-  font-weight: 300;
   border: 1px solid transparent;
   border-bottom: 1px solid #d8d8d8;
 `

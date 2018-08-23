@@ -18,12 +18,14 @@ const onClick = () => alert('CLICKED!!!')
 const TableSample = () => (
   <Table>
     <TableHead>
-      <TableCell>Emissor</TableCell>
-      <TableCell>tipo</TableCell>
-      <TableCell>Liquidez</TableCell>
-      <TableCell>Prazo</TableCell>
-      <TableCell>Taxa</TableCell>
-      <TableCell>Mínimo</TableCell>
+      <TableRow>
+        <TableCell>Emissor</TableCell>
+        <TableCell>tipo</TableCell>
+        <TableCell>Liquidez</TableCell>
+        <TableCell>Prazo</TableCell>
+        <TableCell>Taxa</TableCell>
+        <TableCell>Mínimo</TableCell>
+      </TableRow>
     </TableHead>
     <TableBody>
       <TableRow onClick={onClick}>
@@ -57,16 +59,18 @@ const TableSample = () => (
 const SortableTable = () => (
   <Table>
     <TableHead>
-      <TableSortLabel direction="asc" active onClick={onClick}>
-        Emissor
-      </TableSortLabel>
-      <TableSortLabel direction="desc" active onClick={onClick}>
-        tipo
-      </TableSortLabel>
-      <TableCell>Liquidez</TableCell>
-      <TableCell>Prazo</TableCell>
-      <TableCell>Taxa</TableCell>
-      <TableCell>Mínimo</TableCell>
+      <TableRow>
+        <TableSortLabel direction="asc" active onClick={onClick}>
+          Emissor
+        </TableSortLabel>
+        <TableSortLabel direction="desc" active onClick={onClick}>
+          tipo
+        </TableSortLabel>
+        <TableCell>Liquidez</TableCell>
+        <TableCell>Prazo</TableCell>
+        <TableCell>Taxa</TableCell>
+        <TableCell>Mínimo</TableCell>
+      </TableRow>
     </TableHead>
     <TableBody>
       <TableRow>
