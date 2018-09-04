@@ -5,9 +5,9 @@
   "description": "Easynvest Ui Lib",
   "dependencies": {},
   "devDependencies": {
-    "create-react-library": "^2.6.0",
+    "create-react-library": "^2.6.1",
     "kcd-scripts": "^0.42.1",
-    "lerna": "^3.1.2"
+    "lerna": "^3.2.1"
   },
   "scripts": {
     "contributor:add": "kcd-scripts contributors add",
