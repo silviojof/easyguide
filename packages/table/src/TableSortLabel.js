@@ -30,7 +30,6 @@ TableSortLabel.propTypes = {
 
 TableSortLabel.defaultProps = {
   direction: 'desc',
-  onClick: () => null,
 }
 
 export default TableSortLabel

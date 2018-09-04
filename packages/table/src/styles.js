@@ -63,6 +63,15 @@ export const tableCellStyle = ({numeric = false}) => css`
   border-bottom: 1px solid #d8d8d8;
 `
 
+export const tableCellClipContentStyle = ({minWidth}) =>
+  minWidth &&
+  css`
+    max-width: ${minWidth}px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  `
+
 export const arrowStyle = ({direction}) => css`
   display: inline-block;
   vertical-align: top;
@@ -71,8 +80,11 @@ export const arrowStyle = ({direction}) => css`
   transform: ${direction === 'asc' && 'rotate(180deg)'};
 `
 
-export const tableSortLabelStyle = () => css`
-  &:hover {
-    cursor: pointer;
-  }
-`
+export const tableSortLabelStyle = ({onClick}) =>
+  onClick &&
+  css`
+    &:hover {
+      cursor: pointer;
+      color: #322828;
+    }
+  `
