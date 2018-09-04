@@ -5,6 +5,7 @@
   "description": "Easynvest Ui Lib",
   "dependencies": {},
   "devDependencies": {
+    "@types/jest": "^23.3.1",
     "create-react-library": "^2.6.1",
     "kcd-scripts": "^0.42.1",
     "lerna": "^3.2.1"
