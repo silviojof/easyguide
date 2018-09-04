@@ -13,4 +13,7 @@ matrix:
     - env: PROJECT=packages/table
     - env: PROJECT=packages/theme
 
-script: if .travis/build-condition.sh $TRAVIS_COMMIT_RANGE $PROJECT; then echo "$PROJECT is being built"; else echo "$PROJECT is NOT being built"; fi
+script:
+  - cd $PROJECT
+  - npm install
+  - npm test
