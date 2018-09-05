@@ -82,7 +82,11 @@ export const arrowBoxStyle = () => css`
   display: inline-flex;
   width: 14px;
   margin-left: 7px;
-  margin-bottom: 3px
+  margin-bottom: 3px;
+`
+export const noWrapContainerStyle = () => css`
+  display: flex;
+  flex-wrap: nowrap;
 `
 
 export const tableSortLabelStyle = ({onClick}) =>
