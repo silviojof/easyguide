@@ -15,7 +15,8 @@
   "keywords": [],
   "author": "Guilherme M. Gregio <guilherme@gregio.net> (http://gregio.net/)",
   "dependencies": {
-    "@easyguide/table": "file:../table",
+    "@easyguide/table": "0.2.2",
+    "@easyguide/stepper": "0.0.1",
     "emotion": "^9.2.6",
     "lodash.random": "^3.2.0",
     "money-formatter": "^0.1.4",
