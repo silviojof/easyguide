@@ -2,7 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'react-emotion'
 import TableCell from './TableCell'
-import {tableSortLabelStyle, arrowStyle} from './styles'
+import {
+  tableSortLabelStyle,
+  arrowStyle,
+  arrowBoxStyle,
+  noWrapContainerStyle,
+} from './styles'
 import Icon from './assets/images/arrow.svg'
 
 const CellStyled = styled(TableCell)`
@@ -13,10 +18,21 @@ const Arrow = styled.img`
   ${arrowStyle};
 `
 
+const ArrowBox = styled.span`
+  ${arrowBoxStyle};
+`
+const NoWrapContainer = styled.div`
+  ${noWrapContainerStyle};
+`
+
 const TableSortLabel = ({className, active, direction, onClick, children}) => (
   <CellStyled className={className} onClick={onClick}>
-    {children}
-    {active && <Arrow src={Icon} direction={direction} />}
+    <NoWrapContainer>
+      {children}
+      <ArrowBox>
+        {active && <Arrow src={Icon} direction={direction} />}
+      </ArrowBox>
+    </NoWrapContainer>
   </CellStyled>
 )
 

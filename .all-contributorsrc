@@ -31,8 +31,8 @@
       "contributions": [
         "bug",
         "code",
-        "test", 
-		"doc"
+        "test",
+        "doc"
       ]
     },
     {
@@ -44,7 +44,17 @@
         "bug",
         "code",
         "test",
-		"doc"
+        "doc"
+      ]
+    },
+    {
+      "login": "silviojof",
+      "name": "Silvio Oliveira",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22313150?v=4",
+      "profile": "http://silviojoliveira.com",
+      "contributions": [
+        "code",
+        "test"
       ]
     }
   ]

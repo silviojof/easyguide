@@ -1,8 +1,8 @@
 {
-  "name": "@easyguide/table",
+  "name": "@easyguide/stepper",
   "version": "0.3.0",
-  "description": "Components table ui",
-  "author": "guilhermegregio",
+  "description": "Components stepper ui",
+  "author": "iamtchelo",
   "license": "MIT",
   "repository": "git@github.com:easynvest/easyguide.git",
   "main": "dist/index.js",
@@ -22,21 +22,10 @@
     "validate": "kcd-scripts validate lint,test:cover",
     "precommit": "kcd-scripts precommit"
   },
-  "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "*/**/*.js",
-      "!**/coverage/**",
-      "!**/(*.spec).js"
-    ]
-  },
   "peerDependencies": {
-    "emotion": "^9.2.6",
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0",
-    "react-emotion": "^9.2.6"
+    "react-dom": "^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -57,6 +46,7 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
+    "jest-dom": "^1.12.0",
     "jest-environment-jsdom": "^23.4.0",
     "kcd-scripts": "^0.42.1",
     "react": "^16.4.1",
@@ -77,6 +67,5 @@
   },
   "files": [
     "dist"
-  ],
-  "gitHead": "085fd032c25d3183496bf0fccd97ed897a7a8bbe"
+  ]
 }

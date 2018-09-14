@@ -75,9 +75,18 @@ export const tableCellClipContentStyle = ({minWidth}) =>
 export const arrowStyle = ({direction}) => css`
   display: inline-block;
   vertical-align: top;
-  margin-top: 2px;
-  margin-left: 7px;
   transform: ${direction === 'asc' && 'rotate(180deg)'};
+`
+
+export const arrowBoxStyle = () => css`
+  display: inline-flex;
+  width: 14px;
+  margin-left: 7px;
+  margin-bottom: 3px;
+`
+export const noWrapContainerStyle = () => css`
+  display: flex;
+  flex-wrap: nowrap;
 `
 
 export const tableSortLabelStyle = ({onClick}) =>
