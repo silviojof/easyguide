@@ -22,6 +22,15 @@
     "validate": "kcd-scripts validate lint,test:cover",
     "precommit": "kcd-scripts precommit"
   },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "*/**/*.js",
+      "!**/coverage/**",
+      "!**/(*.spec).js"
+    ]
+  },
   "peerDependencies": {
     "emotion": "^9.2.6",
     "prop-types": "^15.5.4",
@@ -30,6 +39,7 @@
     "react-emotion": "^9.2.6"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
     "babel-plugin-emotion": "^9.2.6",
@@ -40,6 +50,8 @@
     "cross-env": "^5.1.4",
     "downshift": "^2.1.4",
     "emotion": "^9.2.6",
+    "enzyme": "^3.5.1",
+    "enzyme-adapter-react-16": "^1.4.0",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
