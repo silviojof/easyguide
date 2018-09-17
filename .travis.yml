@@ -10,6 +10,7 @@ matrix:
   include:
     - env: PROJECT=packages/table
     - env: PROJECT=packages/theme
+    - env: PROJECT=packages/icon
 
 script:
   - cd $PROJECT

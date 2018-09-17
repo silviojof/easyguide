@@ -17,6 +17,7 @@
   "dependencies": {
     "@easyguide/stepper": "^0.3.0",
     "@easyguide/table": "^0.3.0",
+    "@easyguide/icon": "0.0.1",
     "emotion": "^9.2.6",
     "lodash.random": "^3.2.0",
     "money-formatter": "^0.1.4",
