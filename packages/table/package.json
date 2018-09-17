@@ -29,7 +29,11 @@
       "*/**/*.js",
       "!**/coverage/**",
       "!**/(*.spec).js"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   },
   "peerDependencies": {
     "emotion": "^9.2.6",
@@ -41,7 +45,8 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
-    "babel-plugin-emotion": "^9.2.6",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-emotion": "^9.2.9",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
