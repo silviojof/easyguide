@@ -1,6 +1,6 @@
 {
   "name": "examples",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "",
   "main": "index.js",
   "private": true,
@@ -15,9 +15,9 @@
   "keywords": [],
   "author": "Guilherme M. Gregio <guilherme@gregio.net> (http://gregio.net/)",
   "dependencies": {
-    "@easyguide/stepper": "^0.3.0",
-    "@easyguide/table": "^0.3.0",
-    "@easyguide/icon": "0.0.1",
+    "@easyguide/icon": "^0.3.1",
+    "@easyguide/stepper": "^0.3.1",
+    "@easyguide/table": "^0.3.1",
     "emotion": "^9.2.6",
     "lodash.random": "^3.2.0",
     "money-formatter": "^0.1.4",
