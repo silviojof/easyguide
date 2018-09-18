@@ -1,18 +1,67 @@
 import React from 'react'
 import 'react-testing-library/cleanup-after-each'
-import {render} from 'react-testing-library'
+import 'jest-dom/extend-expect'
+import { render, fireEvent } from 'react-testing-library'
+import { createMatchers } from 'jest-emotion'
+import * as emotion from 'emotion'
 import TableSortLabel from '../TableSortLabel'
 
-describe('<Table />', () => {
-  it('should be rendered', () => {
-    const {debug} = render(
-      <TableSortLabel
-        active={true}
-        direction="desc"
-      />
-    )
-    debug()
+expect.extend(createMatchers(emotion))
 
-    expect(true).toBeTruthy()
+const renderComponent = (props, children) => {
+  return render(
+    <table>
+      <thead>
+        <tr>
+          <TableSortLabel {...props}>
+            {children}
+          </TableSortLabel>
+        </tr>
+      </thead>
+    </table>
+  )
+}
+describe('<Table />', () => {
+  it('should be rendered with arrow', () => {
+    const { container, queryByText} = renderComponent({
+      active: true,
+      direction: 'asc'
+    }, 'children')
+    const img = container.querySelector('img[direction="asc"]')
+    expect(container.querySelector('td')).toHaveStyleRule('color', '#322828')
+    expect(queryByText('children')).toBeTruthy()
+    expect(img).toBeTruthy()
+    expect(container.querySelector('span')).not.toBeEmpty()
+    expect(img).toHaveStyleRule('transform', 'rotate(180deg)')
+  })
+  it('should be rendered with arrow pointing down', () => {
+    const { container } = renderComponent({
+      active: true,
+      direction: 'desc'
+    }, 'children')
+    const img = container.querySelector('img[direction="desc"]')
+    expect(img).not.toHaveStyleRule('transform', 'rotate(180deg)')
+  })
+  it('should be rendered without arrow', () => {
+    const { container } = renderComponent({
+      active: false
+    }, 'children')
+    expect(container.querySelector('span')).toBeEmpty()
+  })
+  it('should trigger click', () => {
+    const spy =  jest.fn()
+    const { container } = renderComponent({
+      active: false,
+      onClick: spy
+    }, 'children')
+    fireEvent.click(container.querySelector('td'))
+    expect(spy).toHaveBeenCalledTimes(1)
+  })
+  it('should add class', () => {
+    const { container } = renderComponent({
+      active: false,
+      className: 'className'
+    }, 'children')
+    expect(container.querySelector('td')).toHaveClass('className')
   })
 })
