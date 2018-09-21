@@ -8,8 +8,8 @@ import TableSortLabel from '../TableSortLabel'
 
 expect.extend(createMatchers(emotion))
 
-const renderComponent = (props, children) => {
-  return render(
+const renderComponent = (props, children) => (
+  render(
     <table>
       <thead>
         <tr>
@@ -20,7 +20,8 @@ const renderComponent = (props, children) => {
       </thead>
     </table>
   )
-}
+)
+
 describe('<Table />', () => {
   it('should be rendered with arrow', () => {
     const { container, queryByText} = renderComponent({
@@ -29,8 +30,8 @@ describe('<Table />', () => {
     }, 'children')
     const img = container.querySelector('img[direction="asc"]')
     expect(container.querySelector('td')).toHaveStyleRule('color', '#322828')
-    expect(queryByText('children')).toBeTruthy()
-    expect(img).toBeTruthy()
+    expect(queryByText('children')).toBeInTheDocument()
+    expect(img).toBeInTheDocument()
     expect(container.querySelector('span')).not.toBeEmpty()
     expect(img).toHaveStyleRule('transform', 'rotate(180deg)')
   })
@@ -55,7 +56,7 @@ describe('<Table />', () => {
       onClick: spy
     }, 'children')
     fireEvent.click(container.querySelector('td'))
-    expect(spy).toHaveBeenCalledTimes(1)
+    expect(spy).toHaveBeenCalled()
   })
   it('should add class', () => {
     const { container } = renderComponent({
